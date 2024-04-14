@@ -1,0 +1,142 @@
+.header {
+  min-height: 60vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4,9,30,0.7)), url(eduford_img/background.jpg)
+}
+
+.text-box h1 {
+  font-size: 35px;
+}
+
+.categories {
+  width: 85%;
+  margin: 100px auto 0;
+}
+
+.categories-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  column-gap: 35px;
+}
+
+.categories-col {
+  flex-basis: 65%;
+}
+
+.categories-col2 {
+flex-basis: 30%;
+padding-top: 15px;
+}
+
+.categories-col img {
+  width: 100%;
+}
+
+.post-categories {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.post-categories h2 {
+  background: #f44336;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 7px 0;
+  margin-bottom: 15px;
+}
+
+.post-categories ul {
+  width: 100%;
+  list-style: none;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: gray;
+}
+
+@media (max-width: 820px) {
+  .categories-row {
+    flex-direction: column;
+  }
+
+  .categories-col2 {
+    align-self: center;
+    width: 100%;
+  }
+}
+
+.post-content {
+  width: 65%;
+  padding-left: 13px;
+}
+
+.post-content h2 {
+  margin-top: 50px;
+}
+
+.post-content p {
+  margin-top: 20px;
+  color: gray;
+  line-height: 30px;
+}
+
+@media (max-width: 900px) {
+  .post-content {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 13px;
+  padding: 30px;
+  border: 1px solid lightgray;
+  row-gap: 30px;
+}
+
+form h2 {
+  font-size: 19px;
+}
+
+form input, textarea {
+  background: rgb(234, 234, 234);
+  border: none;
+  padding: 10px 10px;
+}
+
+textarea {
+  min-height: 50px;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.hero-btn {
+  color: #f44336;
+  border-color: #f44336;
+}
+
+.hero-btn:hover {
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  form {
+    width: 100%;
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,78 @@
+.header {
+  min-height: 60vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4,9,30,0.7)), url(eduford_img/background.jpg)
+}
+
+.text-box h1 {
+  font-size: 35px;
+}
+
+.about-us {
+  width: 85%;
+  margin: 100px auto 0;
+}
+
+.about-us-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.about-us-col {
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+
+.about-us-col h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.about-us-col p {
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  color: #f44336;
+  border-color: #f44336;
+}
+
+.hero-btn:hover {
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+  color: #fff;
+}
+
+.hero-btn::before {
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 1.5px;
+  background: #f44336;
+  left: -8%;
+  top: 50%;
+}
+
+.hero-btn::after {
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 1.5px;
+  background: #f44336;
+  right: -8%;
+  top: 50%;
+}
+
+.about-us-col img {
+  width: 100%;
+}
+
+@media (max-width: 950px) {
+  .about-us-container {
+    flex-direction: column;
+  }
+}
